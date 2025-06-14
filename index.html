@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>1 MAFIA TRADER</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url('https://i.pinimg.com/736x/79/68/74/7968740973b0b6dd1b4668fdae827ad7.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.85);
+      min-height: 100vh;
+      width: 100%;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #111827;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      flex-wrap: wrap;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    .menu {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-size: 0.9rem;
+    }
+
+    .menu a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s ease;
+    }
+
+    .menu a:hover {
+      color: #3b82f6;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+
+    .hero p {
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 10px 25px;
+      background-color: #3b82f6;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background-color: #2563eb;
+    }
+
+    .videos, .course, .about {
+      padding: 40px 15px 20px;
+      text-align: center;
+    }
+
+    .videos h2, .course h2, .about h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      color: #3b82f6;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      max-width: 90%;
+      margin: auto;
+    }
+
+    .video-grid iframe {
+      width: 100%;
+      height: 220px;
+      border-radius: 12px;
+      border: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 10px;
+      color: #aaa;
+      font-size: 0.8rem;
+    }
+
+    @media (min-width: 600px) {
+      .navbar {
+        justify-content: space-between;
+      }
+
+      .menu {
+        font-size: 1rem;
+        gap: 25px;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .btn {
+        font-size: 1rem;
+      }
+
+      .video-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      }
+
+      .video-grid iframe {
+        height: 280px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="overlay">
+
+    <!-- 🔷 Navbar -->
+    <div class="navbar">
+      <div class="logo">
+        <img src="https://yt3.googleusercontent.com/8NVTJpSl1GzCx9VYtq90dWKkb07OSgIyOU39moxXP4Bu_xZ1D9h2vF7mh88ypr_dIZ6n_b4jKg0=s160-c-k-c0x00ffffff-no-rj" alt="1 Mafia Logo" />
+      </div>
+      <div class="menu">
+        <a href="#home">Home</a>
+        <a href="#videos">Videos</a>
+        <a href="#course">Course</a>
+        <a href="#about">About</a>
+      </div>
+    </div>
+
+    <!-- 🔷 Hero -->
+    <div class="hero" id="home">
+      <h1>1 MAFIA TRADER</h1>
+      <p>Master the Market, Mafia Style.</p>
+      <a href="https://t.me/mafia1trader" target="_blank" class="btn">Join Telegram</a>
+    </div>
+
+    <!-- 🔷 Videos Section -->
+    <section class="videos" id="videos">
+      <h2>🎥 Latest YouTube Videos</h2>
+      <div class="video-grid">
+        <iframe src="https://www.youtube.com/embed/StVHF4h_yBg" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/2Y4ALX7ZN6A" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/Npb3CENSLx4" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- 🔷 Course Section -->
+    <section class="course" id="course">
+      <h2>📘 Upcoming Course</h2>
+      <p>Exclusive trading course coming soon.</p>
+      <button class="btn">Notify Me</button>
+    </section>
+
+    <!-- 🔷 About Section -->
+    <section class="about" id="about">
+      <h2>🙋 About</h2>
+      <p>1 MAFIA TRADER is a bold trader and educator known for fearless market strategies and real-world insights shared on YouTube.</p>
+    </section>
+
+    <!-- 🔷 Footer -->
+    <footer>
+      © 2025 1 MAFIA TRADER | Created by Manish Chaudhary
+    </footer>
+
+  </div>
+
+</body>
+</html>
